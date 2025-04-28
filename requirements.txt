@@ -1,1 +1,1 @@
-python3-idle
+python3

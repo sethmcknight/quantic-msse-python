@@ -1,3 +1,4 @@
+from math import prod
 # Number lists
 numbers = (1, 2, 3, 4, 5)
 squares = []  
@@ -35,8 +36,8 @@ for number in numbers:
     quints_string.append(str(number))  
 
 # Prints the numbers, squares, cubes, quartics, and quintics of each number in the numbers tuple
-print(f"Numbers: " + " * ".join(numbers_string) + f" = {eval('*'.join(numbers_string))}")
-print(f"Squares: " + " * ".join(squares_string) + f" = {eval('*'.join(squares_string))}")
-print(f"Cubes: " + " * ".join(cubes_string) + f" = {eval('*'.join(cubes_string))}")
-print(f"Quartics: " + " * ".join(quarts_string) + f" = {eval('*'.join(quarts_string))}")
-print(f"Quintics: " + " * ".join(quints_string) + f" = {eval('*'.join(quints_string))}")
+print(f"Numbers: " + " * ".join(numbers_string) + f" = {prod(map(int, numbers_string))}")
+print(f"Squares: " + " * ".join(squares_string) + f" = {prod(map(int, squares_string))}")
+print(f"Cubes: " + " * ".join(cubes_string) + f" = {prod(map(int, cubes_string))}")
+print(f"Quartics: " + " * ".join(quarts_string) + f" = {prod(map(int, quarts_string))}")
+print(f"Quintics: " + " * ".join(quints_string) + f" = {prod(map(int, quints_string))}")

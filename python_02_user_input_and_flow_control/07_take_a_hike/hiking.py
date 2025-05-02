@@ -1,0 +1,5 @@
+trail = input("Which trail are you taking? ")
+length = float(input("How long is the trail in Kilometers? "))
+days = int(input("How many days do you plan to hike? "))
+daily_distance = round(length / days, ndigits=1)
+print(f"You will hike {daily_distance} kilometers each day on the {trail} trail.")
